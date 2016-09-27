@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+var React = require('react');
+var ReactDOM = require('react-dom');
+var ToDoAll = require('./ToDoAll');
 
-if(process.env.NODE_ENV !== 'production') {
-  React.Perf = require('react-addons-perf');
-}
 
 ReactDOM.render(
-  <div>Hello world</div>,
+  <div className="container">
+    <ToDoAll />
+  </div>,
   document.getElementById('app')
 );

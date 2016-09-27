@@ -34,7 +34,7 @@ const common = merge(
     }
   },
   parts.indexTemplate({
-    title: 'Kanban demo',
+    title: 'ToDo',
     appMountId: 'app'
   }),
   parts.loadJSX(PATHS.app),
