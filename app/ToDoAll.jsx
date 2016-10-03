@@ -4,7 +4,7 @@ var ToDoItem = require('./ToDoItem');
 var ToDoList = require('./ToDoList');
 var ToDoForm = require('./ToDoForm');
 
-
+var nnId = 0;
 var ToDoAll = React.createClass({
   getInitialState: function(){
     return { items:[] };
@@ -19,7 +19,8 @@ var ToDoAll = React.createClass({
   },
 
   generateId: function(){
-    return Math.floor(Math.random()*90000);
+     nnId = nnId + 1;
+     return nnId;
   },
 
   removeNodes: function(id){
